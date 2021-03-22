@@ -1,0 +1,90 @@
+<?xml version = "1.0"?>
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+       <head>
+         <title>align tab</title>
+         <style>
+         body {
+		    background-color: yellow;
+		    color: blue
+		 }
+
+		 thead {
+		    background-color: green;
+		 }
+
+
+		 h1.speciale {
+		     text-align: center;
+		     color: purple;
+		     font-family: Arial,Sans Serif;
+		 }
+
+		 p.spostato {color:black;
+		    font-size: 120%;
+		    text-align: right;
+		 }
+
+
+		 .inTesta {
+		     vertical: top;
+		 }
+		 .inFondo {
+		     vertical-align: bottom;
+		 }
+		 td.destra {
+		     text-align: right;
+		 }
+		 td#soloQuesto {
+		     text-align: center;
+		 }
+		 *#unico {
+		     text-align: right;
+		     color:black;
+		 }
+		 </style>
+      </head>
+
+<body>
+<h1>stili interni</h1>anche h1 e' block-level
+<h1 class="speciale">stili internal
+(h1 non standard)</h1>
+
+<table border="1" cellspacing="3" cellpadding="3">
+
+<thead>
+ <tr>
+  <th></th>
+  <th>articolo in questione</th>
+  <th>e suo prezzo</th>
+ </tr>
+</thead>
+
+<tbody>
+ <tr>
+  <th class="inTesta" rowspan="2">verdura</th>
+  <td>zucchine</td>
+  <td>&euro;2,50</td>
+ </tr>
+ <tr>
+  <td id="soloQuesto">asparagi</td>
+  <td class="destra">&euro;3,05</td>
+ </tr>
+ <tr>
+  <th class="inFondo">frutta</th>
+  <td id="soloQuesto">fragole<br />buonine</td>
+  <td id="unico">&euro;6,20</td>
+ </tr>
+</tbody>
+</table>
+
+<p>
+The End.
+</p>
+<p class="spostato">
+The End.
+</p>
+</body>
+</html>
